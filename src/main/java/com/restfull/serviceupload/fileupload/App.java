@@ -9,7 +9,9 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
 public class App {
-
+	//Apologies for everything being a mess under one package. 
+	//@ComponentScan wasn't working for me with multiple packages
+	//so everything just had to cuddle together. 
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 	}
